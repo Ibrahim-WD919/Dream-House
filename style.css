@@ -1,0 +1,343 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: coral;
+    width: 100%;
+}
+
+/* Light and Dark Mode */
+#mode{
+    width: 50px;
+}
+#mode #sun{
+    display: none;
+}
+
+
+/* nav logo */
+#logo{
+    font-family: "Kaushan Script", cursive; 
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    color: rgb(254, 140, 0);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.157);
+}
+.navbar-brand:hover #logo{
+    color: rgb(169, 0, 129);
+    transition: all .6s ease;
+}
+
+.navbar-brand{
+    position: relative;
+    color: rgb(68, 68, 68);
+    overflow: hidden;
+}
+.navbar-brand::before{
+    content: "";
+    height: 3px;
+    width: 56%;
+    background-color: rgb(17, 17, 17);
+    left: -60%;
+    bottom: 15%;
+    position: absolute;
+}
+.navbar-brand:hover::before{
+    transition: all .4s linear;
+    left: 0%;
+}
+
+/* class="section-padding"  */
+.section-padding{
+    padding-top: 100px;
+}
+
+/* carousel  */
+@media (min-width:900px){
+    .carousel-item{
+        height: 100vh;
+    }
+}
+
+.carousel-item{
+    min-height: 250px;
+    position: relative;
+}
+
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0,0.7) ;
+    z-index: 1;
+}
+
+.carousel-item img{
+    min-height: 250px;
+}
+
+.carousel-caption{
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+}
+.carousel-caption h5{
+    font-size: 5vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.carousel-caption p{
+    width: 70%;
+    margin: auto;
+    font-size: 1.6vw;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 995px) {
+    #eff1:after, #eff1:before,
+    #eff2:after, #eff2:before,
+    #eff3:after, #eff3:before,
+    #eff4:after, #eff4:before,
+    #eff5:after, #eff5:before,
+    #eff6:after, #eff6:before{
+        display: none;
+    }
+  }
+
+/* nav item hover Effect */
+#eff1{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+#eff1:hover::after{
+    left: 0;
+    transition: all .5s ease;
+}
+#eff1:hover::before{
+    transition: all .5s ease;
+    right: 0;
+}
+
+#eff2{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+#eff2:hover::after{
+    left: 0;
+    transition: all .5s ease;
+}
+#eff2:hover::before{
+    transition: all .5s ease;
+    right: 0;
+}
+
+#eff3{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+#eff3:hover::after{
+    left: 0;
+    transition: all .5s ease;
+}
+#eff3:hover::before{
+    transition: all .5s ease;
+    right: 0;
+}
+
+#eff4{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+#eff4:hover::after{
+    left: 0;
+    transition: all .5s ease;
+}
+#eff4:hover::before{
+    transition: all .5s ease;
+    right: 0;
+}
+
+#eff5{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+#eff5:hover::after{
+    left: 0;
+    transition: all .5s ease;
+}
+#eff5:hover::before{
+    transition: all .5s ease;
+    right: 0;
+}
+
+#eff6{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+#eff6:hover::after{
+    left: 0;
+    transition: all .5s ease;
+}
+#eff6:hover::before{
+    transition: all .5s ease;
+    right: 0;
+}
+
+#eff1::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    top: 0;
+    left: -62px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+#eff1::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    right: -62px;
+    bottom: 0;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+
+#eff2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    top: 0;
+    left: -63px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+#eff2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    right: -63px;
+    bottom: 0;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+
+#eff3::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    top: 0;
+    left: -78px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+#eff3::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    right: -78px;
+    bottom: 0;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+
+#eff4::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    top: 0;
+    left: -83px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+#eff4::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    right: -83px;
+    bottom: 0;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+
+#eff5::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    top: 0;
+    left: -62px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+#eff5::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    right: -62px;
+    bottom: 0;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+
+#eff6::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    top: 0;
+    width: 50%;
+    left: -50px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+#eff6::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    right: -45px;
+    bottom: 0;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1px ;
+    border: none;
+}
+
+
+/* team-section */
+.team .card-body i{
+    font-size: 22px;
+    cursor: pointer;
+} 
